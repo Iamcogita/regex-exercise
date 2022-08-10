@@ -11,11 +11,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String toAnalyze = "BLA_BlA q p pqqq tp bla_bla, ho_ho PQqu "; // Global String to analyze
+        String toAnalyze = "BLA_Bla p0q p pqQq tp bla_bla, ho_ho PQqu P***q"; // Global String to analyze
         Functions function = new Functions();
 
         function.matchPWithQs(toAnalyze); // 1
         function.findLowerCaseWithUnderScore(toAnalyze); // 2
+        function.findUpperToLower(toAnalyze); // 3
+        function.matchPStuffQs(toAnalyze); // 4 - wip
 
     }
 
