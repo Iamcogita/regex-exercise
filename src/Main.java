@@ -11,14 +11,27 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String toAnalyze = "BLA_Bla p0q p pqQq tp bla_bla, ho_ho PQqu P***q"; // Global String to analyze
+        String toAnalyze = "BLA_Bla p0q p pqQq tp@ bla_bla, PQqu P***q"; // Global String to analyze
+
+        String phoneNumber1 = "+351 963721938"; // true
+        String phoneNumber2 = "+351 9637219389"; // false
+        String phoneNumber3 = "963721938"; // true
+        String phoneNumber4 = "G63721938"; // false
+        String phoneNumber5 = "+351963721938"; // true
+
         Functions function = new Functions();
 
         function.matchPWithQs(toAnalyze); // 1
         function.findLowerCaseWithUnderScore(toAnalyze); // 2
         function.findUpperToLower(toAnalyze); // 3
-        function.matchPStuffQs(toAnalyze); // 4 - wip
-
+        function.matchPStuffQs(toAnalyze); // 4
+        function.dontLikeSpacesOrSpecials(toAnalyze); // 5
+        function.replaceVowels(toAnalyze); // 6
+        function.findPhoneNumber(phoneNumber1); // 7
+        function.findPhoneNumber(phoneNumber2); // 7
+        function.findPhoneNumber(phoneNumber3); // 7
+        function.findPhoneNumber(phoneNumber4); // 7
+        function.findPhoneNumber(phoneNumber5); // 7
+        function.removeAlphaNum(toAnalyze); // 8
     }
-
 }
