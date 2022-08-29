@@ -13,11 +13,11 @@ public class Main {
 
         String toAnalyze = "BLA_Bla p0q p pqQq tp@ bla_bla, PQqu P***q"; // Global String to analyze
 
-        String phoneNumber1 = "+351 963721938"; // true
+        String phoneNumber1 = "+351 933723438"; // true
         String phoneNumber2 = "+351 9637219389"; // false
-        String phoneNumber3 = "963721938"; // true
-        String phoneNumber4 = "G63721938"; // false
-        String phoneNumber5 = "+351963721938"; // true
+        String phoneNumber3 = "963745638"; // true
+        String phoneNumber4 = "G63721234"; // false
+        String phoneNumber5 = "+351913729878"; // true
 
         Functions function = new Functions();
 

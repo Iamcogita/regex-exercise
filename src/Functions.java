@@ -66,7 +66,7 @@ public class Functions {
 
     public boolean findPhoneNumber(String str){
         System.out.printf("%s is : " , str);
-        if(str.matches("(\\+?351)?[ ]*?9\\d\\d{7}")){
+        if(str.matches("(\\+?351)?[ ]*?9[1|2|3|6]\\d{7}")){
             System.out.println("Validated");
             return true;}
         System.out.println("Error");
